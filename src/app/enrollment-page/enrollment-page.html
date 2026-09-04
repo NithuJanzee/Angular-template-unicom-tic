@@ -1,0 +1,57 @@
+<h2>Enrollment</h2>
+
+<div class="panel">
+  <h3>Assign Student to Course</h3>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Student</label>
+        <select name="studentId">
+          <option>-- Select Student --</option>
+          <!-- one sample option - replace this with a loop over the service data -->
+          <option>Nithushan Janson</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Course</label>
+        <select name="courseId">
+          <option>-- Select Course --</option>
+          <!-- one sample option - replace this with a loop over the service data -->
+          <option>Diploma in Information Technology (DIT101)</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary">Assign</button>
+  </form>
+</div>
+
+<div class="panel">
+  <h3>Enrollment List</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Student</th>
+        <th>Course</th>
+        <th>Enrolled On</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- one sample row - replace this with a loop over the service data -->
+      <tr>
+        <td>1</td>
+        <td>Nithushan Janson</td>
+        <td>Diploma in Information Technology</td>
+        <td>12/01/2026</td>
+        <td>
+          <button class="btn-small btn-danger">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

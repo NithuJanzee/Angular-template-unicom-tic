@@ -1,0 +1,285 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Segoe UI, Arial, sans-serif;
+  background: #f2f4f7;
+  color: #1f2937;
+}
+
+h2 {
+  margin: 0 0 4px;
+}
+
+h3 {
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #6b7280;
+}
+
+/* ---------- navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1e3a8a;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+
+.nav-links a {
+  color: #dbeafe;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background: #2748a5;
+}
+
+.nav-links a.active {
+  background: #fff;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* ---------- content ---------- */
+.content {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.content.no-nav {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* ---------- forms ---------- */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #374151;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1e3a8a;
+}
+
+/* ---------- buttons ---------- */
+.btn-primary {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #2748a5;
+}
+
+.btn-primary.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-plain {
+  background: #e5e7eb;
+  color: #374151;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.btn-small {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.btn-danger {
+  background: #b91c1c;
+}
+
+/* ---------- tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f9fafb;
+  color: #374151;
+}
+
+.empty {
+  color: #9ca3af;
+}
+
+/* ---------- dashboard cards ---------- */
+.card-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1 1 180px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.quick-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---------- login ---------- */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e3a8a;
+}
+
+.login-box {
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  width: 340px;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 12px;
+}
+
+.login-box input {
+  width: 100%;
+}
+
+.hint {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ---------- messages ---------- */
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
